@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords"
+        content="sleep, dormir, ropa de cama, toallas, sábanas, colchones, sommier, almohadas, acolchados, sobrecama, alfombras">
+        <meta name="description"
+        content="Cammon Oficial, Buenos Aires. Desde 2015, Cammon ofrece productos y diseños de calidad con la intención de brindar calidez a cada hogar.">
+        <meta name="author" content="Getflix">
+        <link rel="icon" href="../images/icons/logo-png.png">
+        <title>CAMMON</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    </head>
+<body>
+    <header class="container__header">
+        <a href="#nav" class="open"><i class="bi bi-list open__img"></i></a>
+        <div class="header-icons">
+            <div class="container__search">
+                <input type="search" placeholder="Buscar">
+                <button type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            <a href="../pages/carrito.html"><i class="bi bi-cart4 "></i></a>
+            <a href="../pages/login.html"><i class="login-icon bi bi-person-circle "></i></a>
+        </div>
+        <nav id="nav" class="nav__container">
+            <a href="#" class="close"><img src="../images/icons/close.png" alt="Cerrar"></a>
+            <ul class="nav__menu">
+                <li class="nav__menu-items"><a href="../index.html"><img class="logo" id="inicio" src="../images/icons/logo-png.png" alt="Camon"/></a></li>
+                <li class="nav__menu-items clippy"><a href="../pages/nosotros.html">NOSOTROS</a></li>
+                <li class="nav__menu-items clippy"><a href="../pages/alta.html">ALTA</a></li>
+                <li class="nav__menu-items clippy nav__item-select"><a href="../pages/contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>    
+    </header>
+
+    <main class="main-contacto">
+        <!-- <img src="../images/products/cubrecamas/cubre-cama-4.jpg" alt=""> -->
+        <form id ="form" class="container-form">
+            <h3>CONTACTO</h3>
+            <div class="inputBox">
+                <input  
+                    class="form-control mb-3" 
+                    name="username"
+                    id="user-name" 
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Nombre"
+                    required
+                    minlength="3"
+                    maxlength="20"
+                />
+            </div>
+            <div class="inputBox">
+                <input 
+                    class="form-control mb-3" 
+                    name="useremail"
+                    id="user-email"
+                    placeholder="Email"
+                    type="email"
+                    autocomplete="off"
+                    required
+                />
+            </div>
+            <div class="inputBox">
+                <label for="comentario" id="comentario">Deje aquí su contulta:</label>
+                <textarea 
+                    name="comentario" 
+                    id="user-message" 
+                    rows="4" cols="50" 
+                    placeholder="Ingrese su comentario..."
+                    minlength="5"
+                    maxlength="500">
+                </textarea>
+            </div>
+            <input type="submit" id="btn-submit"></input>
+        </form>
+    </main>
+
+    <footer class="container__footer">
+        <h2 class="footer__title">CAMMON</h2>
+        <div class="footer__container-contact">
+            <div class="footer__container-logo">
+                <img class="footer__logo" src="../images/icons/logo-png.png" alt="Logo">
+            </div>
+            <div class="footer__icons">
+                <a href="https://twitter.com/?lang=es"><i class="icon-redes bi bi-twitter text-white"></i></a>
+                <a href="https://www.instagram.com/"><i class="icon-redes bi bi-instagram text-white "></i></a>
+                <a href="https://www.facebook.com/"><i class="icon-redes bi bi-facebook text-white "></i></a>
+            </div>
+            <div class="footer__contact">
+                <p>e-mail: contact@camon.com</p>
+                <p>Social Media: @camon</p>
+                <p>Phone number: 0123-4567</p>
+            </div>
+        </div>
+        <p class="footer__reserved">All rights reserved - 2023</p>
+    </footer>
+
+    <script src="../js/contacto.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+</html>

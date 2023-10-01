@@ -1,0 +1,17 @@
+:root {
+    /*FONTS COLORS*/
+    --text-dark-color: rgb(65, 65, 70);
+    --text-light-color: rgb(240, 244, 243);
+
+    /*BOTONS COLORS*/
+    --boton-color: #ac818f;
+
+    /*FONTS FAMIY*/
+    --ff-releway: 'Raleway', sans-serif;
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --ff-bold-anton: 'Anton', sans-serif;
+}
+
+
+
+

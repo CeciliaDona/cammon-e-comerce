@@ -1,0 +1,118 @@
+@import url(nav.css);
+
+
+.nosotros {
+    margin-top: 150px;
+    font-family: var(--ff-releway);
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text-dark-color);
+    font-style: italic;
+    font-weight: 500;
+}
+
+.container__section-gallery {
+    display: none;
+}
+
+.container-nosotros {
+    font-family: var(--ff-releway);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 40px 5% 200px;
+    padding: 50px 25px;
+    background-color: #f3e6e7;
+    color: rgb(103, 36, 36);
+    position: relative;
+    border: 3px solid rgba(141, 28, 28, 0.215);
+    border-radius: 80px 0;
+}
+
+.container-nosotros p {
+    text-align: center;
+    padding-bottom: 40px;
+    font-style: italic;
+}
+
+.container-nosotros p::first-letter {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container-nosotros img{
+    width: 170px;
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*¨--------------------------- RES 768 ------------------------*/
+@media (min-width: 768px) {
+    /*--- section-gallery 768 ---*/
+    .container__section-gallery {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        transition: all 0.5s ease;
+        margin: 150px 0 70px;
+    }
+
+    .container__section-gallery img {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.8;
+        transition: .8s ease;
+    }
+
+    .container__section-gallery img:hover {
+        cursor: crosshair;
+        width: 400px;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+
+/*------ Div nosotros 768 ------*/
+    .container-nosotros {
+        font-weight: 500;
+        font-size: 18px;
+        margin: 40px 7% 200px;
+        padding: 70px 35px;
+        border: 15px solid rgba(141, 28, 28, 0.215);
+    }
+}
+
+@media (min-width: 1024px) {
+    /*--- section-gallery 1024 ---*/
+    .container__section-gallery {
+        height: 800px;
+        margin: 250px 0 70px;
+    }
+}
+
+    /*--- Container Nosotros ---*/
+    .container-nosotros {
+        font-weight: 500;
+        font-size: 20px;
+        margin: 60px 10% 300px;
+        padding: 100px 5%;
+    }
+
+@media (min-width: 1400px) {
+    /*--- container Nosotros 1400 ---*/
+    .container-nosotros {
+        font-weight: 500;
+        font-size: 25px;
+        margin: 80px 15% 500px;
+        padding: 100px 5%;
+        border: 15px solid rgba(141, 28, 28, 0.215);
+    }
+
+    /*--- section-gallery 1400 ---*/
+    .container__section-gallery {
+        height: 900px;
+        margin: 260px 0 100px;
+    }
+}
